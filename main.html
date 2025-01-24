@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Transit</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="#Dashboard" class="sidebar-item active">Dashboard</a>
+            <a href="#Warehouses" class="sidebar-item">Warehouses</a>
+            <a href="#Orders" class="sidebar-item">Orders</a>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>Dashboard</h1> 
+                <div class="user-info">
+                    <span>Ahmed Abbas (Vendor)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 11.14 3.75-3.75-1.5-1.5-2.25 2.25-4.05-4.05c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.25 2.25 1.5-1.5z"/>
+                    </svg>
+                </div>
+            </header>
+
+            <div id="Dashboard" class="section active">
+                <div class="metrics">
+                    <div class="metric">
+                        <h3>Active Drivers</h3>
+                        <span>1</span>
+                    </div>
+                    <div class="metric">
+                        <h3>Active Orders</h3>
+                        <span>12</span>
+                    </div>
+                    <div class="metric">
+                        <h3>Completed Orders</h3>
+                        <span>39</span>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h2>Order and Driver Locations</h2>
+                    <div class="map-controls">
+                        <input type="checkbox" id="driverLocations" checked> Driver Locations<br>
+                        <input type="checkbox" id="pickupLocations"> Pickup Locations<br>
+                        <input type="checkbox" id="deliveryLocations"> Delivery Locations
+                    </div>
+                    <div id="map"></div> 
+                </div>
+            </div>
+
+            <div id="Warehouses" class="section">
+                <h2>Warehouses</h2>
+                </div>
+
+            <div id="Orders" class="section"> 
+                </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
